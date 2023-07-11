@@ -60,6 +60,21 @@ body {
     border: 1px solid black !important;
 }
 
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #e2e2e4;
+	z-index: -1;
+}
+
+.card {
+    height: fit-content !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
