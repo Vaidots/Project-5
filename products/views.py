@@ -3,7 +3,9 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Comment
+from .forms import CommentForm
+
 
 # Create your views here.
 
@@ -67,9 +69,23 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    comments = Comment.objects.filter(product=product, approved=True)
+
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.product = product
+            comment.save()
+            # Redirect to the product detail page after the comment is added
+            return redirect('product_detail', product_id=product_id)
+    else:
+        form = CommentForm()
 
     context = {
         'product': product,
+        'comments': comments,
+        'comment_form': form,
     }
 
     return render(request, 'products/product_detail.html', context)

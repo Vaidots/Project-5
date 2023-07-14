@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+
 class Category(models.Model):
 
     class Meta:
@@ -39,20 +40,17 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-class Review(models.Model):
-    RATING_CHOICES = (
-        (1, '1 - Poor'),
-        (2, '2 - Below average'),
-        (3, '3 - Average'),
-        (4, '4 - Good'),
-        (5, '5 - Excellent'),
-    )
+class Comment(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments')
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
 
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    rating = models.PositiveIntegerField(choices=RATING_CHOICES)
-    comment = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    class Meta:
+        ordering = ["created_on"]
 
     def __str__(self):
-        return f'Review by {self.user} for {self.product.name}'
+        return f"Comment {self.body} by {self.name}"
