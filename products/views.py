@@ -73,3 +73,7 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+def product_reviews(request, product_id):
+    product_reviews = Review.objects.filter(product_id=product_id)
+    return render(request, 'product_reviews.html', {'reviews': product_reviews})
