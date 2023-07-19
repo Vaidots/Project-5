@@ -29,7 +29,7 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -47,6 +47,18 @@
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
+                                {% if product.metal %}
+                               
+                                    <div class="col-12">
+                                        <p><strong>Type:</strong></p>
+                                        <select class="form-control rounded-0 w-50" name="product_metal" id='id_product_metal'>
+                                            <option value="silver">silver</option>
+                                            <option value="gold">gold</option>
+                                            <option value="platinum" selected>platinum</option>
+                                            <option value="other">other</option>
+                                        </select>
+                                    </div>
+                                {% endif %}
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
