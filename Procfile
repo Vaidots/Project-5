@@ -1,0 +1,1 @@
+web: gunicorn V_jewelry_G.wsgi:application
