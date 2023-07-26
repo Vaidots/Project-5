@@ -21,10 +21,16 @@
     {% endblock %}
 
     {% block corecss %}
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          <!-- Google fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+         <!-- Custom CSS -->
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+         <!-- Favicon -->
         <link rel="shortcut icon" href="{% static 'favicon/favicon.ico.png' %}" />
+          <!-- Mailchimp CSS -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block extra_css %}
@@ -152,5 +158,111 @@
     </script>
     {% endblock %}
 
+    <!-- https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+    
+    <footer class="text-center bg-light">
+        
+        <!-- Grid container -->
+    <div class="container pt-2 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+        <!-- Facebook -->
+        <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+        ></a>
+
+        <!-- Github -->
+        <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+        ></a>
+        </section>
+    <!-- Section: Social media -->
+    </div>
+  <!-- Grid container -->
+        </div>
+        <!-- Section: Mailchimp Signup Form -->
+        <div id="mc_embed_signup bg-dark">
+            <form action="https://herokuapp.us9.list-manage.com/subscribe/post?u=8bfb6a93ab75d327509cf45e5&amp;id=2c33ca55d2&amp;f_id=00af14e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-5 col-12">
+                  <h4 class="pt-2">
+                    <strong>Sign up for our newsletter</strong>
+                  </h4>
+                </div>
+                <div id="mc_embed_signup_scroll" class="col-md-5 col-12 d-flex flex-column  align-items-center">
+                  <div class="mc-field-group pt-2">
+                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                    </label>
+                    <input type="email" value="" placeholder="email@example.com" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                  </div>
+                  <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div class="row d-flex justify-content-center">
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_4681803862a52a6100db911bf_4d095adcc2" tabindex="-1" value="">
+                      </div>
+                      <!-- <div class="optionalParent"> -->
+                      <div class=" clear foot">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-suscribe border-0">
+                      </div>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0);">
+          © 2023 Copyright:
+          <a>V_jewelry_G</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+        <!-- Mail chimp JavaScript-->
+  <script>
+    $('.toast').toast('show');
+  </script>
+  <script defer src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <script>
+    (function ($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0] = 'EMAIL';
+      ftypes[0] = 'email';
+      fnames[1] = 'FNAME';
+      ftypes[1] = 'text';
+      fnames[2] = 'LNAME';
+      ftypes[2] = 'text';
+      fnames[3] = 'ADDRESS';
+      ftypes[3] = 'address';
+      fnames[4] = 'PHONE';
+      ftypes[4] = 'phone';
+      fnames[5] = 'BIRTHDAY';
+      ftypes[5] = 'birthday';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+  </script>
+
   </body>
+
 </html>
