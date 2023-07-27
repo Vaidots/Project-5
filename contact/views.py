@@ -1,30 +1,37 @@
-from django.shortcuts import render
+""" Imports from django and contact form. """
+from django.shortcuts import render, redirect
 from django.contrib import messages
-
 from .forms import ContactForm
 
 
-def contact_view(request):
+def ContactMessage(request):
     """
-    A function to render contact page,
-    provide contact form
+    View to display contact us form.
+
+    If the form is valid, save, display a
+    success message and return the contact us form.
+    If invalid, display error message.
     """
-    if request.user.is_authenticated:
-        email = request.user.email
-        contact_form = ContactForm(initial={'email': email})
-        if request.method == 'POST':
-            contact_form = ContactForm(data=request.POST)
 
-            if contact_form.is_valid():
-                contact = contact_form.save(commit=False)
-                contact.save()
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request,
+                'Thank you for your enquiry,\
+                we will get back to soon!')
 
-                return render(request, 'contact/thank_you.html')
+            return redirect('contact')
+        else:
+            messages.error(request,
+                           'Something went wrong, please check the form')
     else:
-        contact_form = ContactForm()
+        form = ContactForm()
 
     template = 'contact/contact.html'
     context = {
-        'contact_form': contact_form
+        'form': form,
     }
+
     return render(request, template, context)

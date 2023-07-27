@@ -110,6 +110,7 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -231,6 +232,10 @@ a.category-badge > span.badge:hover {
 	color: #17a2b8; /* text-info */
 }
 
+
+#content {
+    margin-top: 100px; /* Adjust this value to your desired spacing */
+}
 /* Milchimp */
 #mc_embed_signup {
     background:#fff;
