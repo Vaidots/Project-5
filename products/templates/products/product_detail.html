@@ -109,33 +109,43 @@
             </div>
             
         </div>
-        <form class="form" method="post" action="{% url 'product_detail' product_id=product.id %}">
-
-            {% csrf_token %}
-            {% if user.is_authenticated %}
-                {% if comments %}
-                    <h3>Comments:</h3>
-                    <ul class="comment-list">
-                        {% for comment in comments %}
-                            <li>
-                                <p>{{ comment.body }}</p>
-                                <p>By: {{ comment.name }}</p>
-                            </li>
-                        {% empty %}
-                            <li>No comments yet.</li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-
-                <h3>Add a Comment:</h3>
-                {{ comment_form.as_p }}
-                <input type="submit" class="btn btn-primary" value="Submit Comment">
-            {% else %}
-                <p>Please <a href="{% url 'login' %}">log in</a> to leave a comment.</p>
-            {% endif %}
-        </form>
+   
     </div>
+        <!-- Comment Form -->
+        <div class="container comment">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Add Comment Form -->
+                    <form class="form" method="post" action="{% url 'product_detail' product_id=product.id %}">
+                        {% csrf_token %}
+                        {% if user.is_authenticated %}
+                            <h3>Add a Comment:</h3>
+                            {{ comment_form.as_p }}
+                            <input type="submit" class="btn btn-light rounded-0 text-uppercase " value="Submit Comment">
+                        {% else %}
+                            <p>Please <a href="{% url 'login' %}">log in</a> to leave a comment.</p>
+                        {% endif %}
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    {% if comments %}
+                        <h3>Comments:</h3>
+                        <ul class="comment-list">
+                            {% for comment in comments %}
+                                <li>
+                                    <p>{{ comment.body }}</p>
+                                    <p>By: {{ comment.name }}</p>
+                                </li>
+                            {% empty %}
+                                <li>No comments yet.</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
 {% endblock %}
+
 
 {% block postloadjs %}
 {{ block.super }}

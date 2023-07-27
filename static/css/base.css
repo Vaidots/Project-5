@@ -244,6 +244,16 @@ a.category-badge > span.badge:hover {
     width:600px;
 }
 
+.comment {
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 0.5%;
+  }
+
+  .btn-light {
+    margin-bottom: 15px;
+  }
 
 /* -------------------------------- Media Queries */
 
