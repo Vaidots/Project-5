@@ -6,6 +6,9 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ['name', 'email', 'body', 'rating']
+        widgets = {
+            'body': forms.Textarea(attrs={'class': 'custom-textarea'}),
+        }
 
 
 class ProductForm(forms.ModelForm):
