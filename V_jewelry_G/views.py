@@ -11,11 +11,11 @@ def handler500(request):
     return render(request, "errors/500.html", status=500)
 
 
-def handler403(request):
+def handler403(request, exceptions):
     """ Error Handler 500 - Server Error """
-    return render(request, "errors/403.html", status=500)
+    return render(request, "errors/403.html", status=403)
 
 
 def handler405(request):
     """ Error Handler 500 - Server Error """
-    return render(request, "errors/405.html", status=500)
+    return render(request, "errors/405.html", status=405)

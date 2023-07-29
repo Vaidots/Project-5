@@ -17,13 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import handler404, handler500
+from .views import handler404, handler500, handler403, handler405
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('accounts/', include('django.contrib.auth.urls')),
+
     path('', include('home.urls')),
     path('products/', include('products.urls')),
     path('bag/', include('bag.urls')),
@@ -33,7 +33,7 @@ urlpatterns = [
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = "V_jewelry_G.views.handler403"
+handler403 = "V_jewelry_G.views.handler403"
 handler404 = "V_jewelry_G.views.handler404"
-handler500 = "V_jewelry_G.views.handler405"
+handler405 = "V_jewelry_G.views.handler405"
 handler500 = "V_jewelry_G.views.handler500"
