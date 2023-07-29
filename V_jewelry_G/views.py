@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponseNotFound
 
 
 def handler404(request, exceptions):
@@ -17,5 +18,5 @@ def handler403(request, exceptions):
 
 
 def handler405(request):
-    """ Error Handler 405 - Server Error """
+    """ Error Handler  - Server Error """
     return render(request, "errors/405.html", status=405)
