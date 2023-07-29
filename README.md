@@ -177,3 +177,32 @@ font 'Lato' was used throughout the body.
 Two databases were used in creation of this project, during production SQlite was used and then Postgres was used for the deployed Heroku version.
 
 ![](/media/DatabaseSchema.JPG)
+
+## Business Model
+
+V_jewelry_G is a Business to Consumer model (B2C). Products and services are sold directly from the site, to consumers. 
+
+## Marketing Strategy
+
+A number of different strategies have been used to promote V_jewelry_G including SEO, Social media marketing, email marketing.
+
+## SEO 
+
+* Key words were used in meta tags, description and keywords were used to boost the search engine.
+
+* Sitemap was created with a list of important page URLs to ensure that search enginges could understand the site structure and navigate.
+
+* Robott.xt file was created to tell search enginges where they are not allowerd to go on the site.
+
+* Both were created following botique ado modules
+
+## Social Media
+
+For this site, a facebook business page was created to further increase the search engine and users to see the latest deals, information and communication. Also social media icons were created in footer facebook, instagram.
+
+
+![](/media/FacebookPage.JPG)
+
+## Email Marketing
+
+Customers can sign up to the newsletter which is in the footer, add their email and press subscribe, to receive all the news. Mail chimp was used to create this. Note addblock has to be disabled for the newsletter form to appear.
