@@ -12,10 +12,10 @@ def handler500(request):
 
 
 def handler403(request, exceptions):
-    """ Error Handler 500 - Server Error """
+    """ Error Handler 403 - Server Error """
     return render(request, "errors/403.html", status=403)
 
 
 def handler405(request):
-    """ Error Handler 500 - Server Error """
+    """ Error Handler 405 - Server Error """
     return render(request, "errors/405.html", status=405)

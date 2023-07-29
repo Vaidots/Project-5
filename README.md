@@ -125,7 +125,7 @@ font 'Lato' was used throughout the body.
 * Only superusers cann add products
 ![](/media/Add_ProductManagement.JPG)
 
-# Comment
+## Comment
 
 ![](/media/ProductDetail.JPG)
 
@@ -172,3 +172,8 @@ font 'Lato' was used throughout the body.
 * Users are able to contact us by filling the form provided.
 
 
+# Database Schema
+
+Two databases were used in creation of this project, during production SQlite was used and then Postgres was used for the deployed Heroku version.
+
+![](/media/DatabaseSchema.JPG)
