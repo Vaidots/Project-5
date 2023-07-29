@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponseNotFound
+# from django.http import HttpResponseNotFound
 
 
 def handler404(request, exceptions):
