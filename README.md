@@ -9,13 +9,44 @@ The live link can be found here - [Stripe card testing](https://stripe.com/docs/
 
 The live link can be found here - [V_jewelry_G](https://projectportfolio5-a694568fc098.herokuapp.com/)
 
-# Table of Content
-* [User Experience (UX)](#user-experience-ux)
-* [Design](#design)
-* [Features](#features)
-* [Technologies](#technologies-used)
-* [Testing](#testing)
-* [Deployment](#deployment)
+# Table of Contents
+1. [User Experience (UX)](#user-experience-ux)
+2. [Design](#design)
+3. [Features](#features)
+   - [Header](#header)
+   - [Footer](#footer)
+   - [Home Page](#home-page)
+   - [User Account Pages](#user-account-pages)
+   - [Products](#products)
+   - [Comment](#comment)
+   - [Shopping Bag](#shopping-bag)
+   - [Checkout](#checkout)
+   - [Order Confirmation](#order-confirmation)
+   - [Profile](#profile)
+   - [Contact Us Form](#contact-us-form)
+4. [Technologies](#technologies)
+   - [Languages](#languages)
+   - [Frameworks and Programs](#frameworks-and-programs)
+5. [Testing](#testing)
+   - [Manual Testing](#manual-testing)
+   - [Validator Testing](#validator-testing)
+   - [Python Testing](#python-testing)
+   - [Lighthouse](#lighthouse)
+6. [Deployment](#deployment)
+   - [Development Environment](#development-environment)
+   - [Deployment to Heroku](#deployment-to-heroku)
+   - [Cloning the Repository](#cloning-the-repository)
+7. [Future Features](#future-features)
+8. [Business Model](#business-model)
+9. [Marketing Strategy](#marketing-strategy)
+   - [SEO](#seo)
+   - [Social Media](#social-media)
+   - [Email Marketing](#email-marketing)
+10. [Wireframes](#wireframes)
+11. [Database Schema](#database-schema)
+12. [Credits](#credits)
+13. [Acknowledgement](#acknowledgement)
+
 
 # User Experience (UX)
 
@@ -178,6 +209,26 @@ Two databases were used in creation of this project, during production SQlite wa
 
 ![](/media/DatabaseSchema.JPG)
 
+#Wireframes
+
+<details>
+
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.47%20(1).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.47%20(2).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.47%20(3).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.47%20(4).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.47.jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.48%20(1).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.48%20(2).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.48%20(3).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.48%20(4).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.48%20(5).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.48%20(6).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.48%20(7).jpeg)
+![](/media/WhatsApp%20Image%202023-07-30%20at%2004.07.48.jpeg)
+
+</details> 
+
 ## Business Model
 
 V_jewelry_G is a Business to Consumer model (B2C). Products and services are sold directly from the site, to consumers. 
@@ -281,6 +332,7 @@ Customers can sign up to the newsletter which is in the footer, add their email 
 * implement a wishlist, blog, time tracker, delivery tracker
 * improve the website overall with appropriate size of images.
 * Createa a json file for database, as products were uploaded manually.
+* Implement more style and function, add react for fron end, to look more visually appealing as this is quite basic.
 
 # Technologies
 
