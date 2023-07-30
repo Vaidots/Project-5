@@ -5,7 +5,9 @@ V_jewelry_G is an online B2C(Business-to-Consumer)online jewelry store, offering
 
 The live link can be found here - [Stripe card testing](https://stripe.com/docs/testing#cards)
 
+![](/media/IamResponsive.JPG)
 
+The live link can be found here - [Click here](https://projectportfolio5-a694568fc098.herokuapp.com/)
 
 The live link can be found here - [V_jewelry_G](https://projectportfolio5-a694568fc098.herokuapp.com/)
 
