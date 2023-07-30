@@ -275,5 +275,116 @@ Customers can sign up to the newsletter which is in the footer, add their email 
 * Mobile scores goes lower in other pages, due to picture sizes.
 
 
+# Future features
+
+* I  have the self-reported rating in the product model (like in the Boutique Ado project). And i would like to implement computed average from user comments would be to have a model method that does it.
+* implement a wishlist, blog, time tracker, delivery tracker
+* improve the website overall with appropriate size of images.
+* Createa a json file for database, as products were uploaded manually.
+
+# Technologies
+
+## Lanugages
+
+* HTML
+* CSS
+* Javascript
+* Pytho
+
+## Frameworks, programs
 
 
+- [Django](https://www.djangoproject.com/): A high-level Python web framework for rapid development.
+- [Bootstrap 4](https://getbootstrap.com/): A CSS framework for responsive and mobile-first design.
+- [Gitpod](https://www.gitpod.io/): An online Integrated Development Environment (IDE) used during development.
+- [GitHub](https://github.com/): Version control and code repository hosting for the project.
+- [Heroku](https://www.heroku.com/): A cloud platform service used for deploying and hosting the project.
+- [ElephantSQL](https://www.elephantsql.com/): A cloud-based database service used to store project data.
+- [Font Awesome](https://fontawesome.com/): A library of icons used for social media links.
+- [PEP8ci](https://pep8online.com/): A tool used to validate Python code against PEP 8 style guidelines.
+- [dbdiagram](https://dbdiagram.io/): An online tool used to create the database schema.
+- [Stripe](https://stripe.com/): A payment processing platform used for checkout functionality and online payments.
+- [AWS](https://aws.amazon.com/): Used for object storage through a web service interface.
+- [Unsplash](https://unsplash.com/): Source of images used in the project.
+- [Pexels](https://www.pexels.com/): Source of images used in the project.
+
+
+# Deployment
+
+## Development Environment
+
+This site was developed using **Gitpod** as the Integrated Development Environment (IDE) and **git** for version control.
+
+## Deployment to Heroku
+
+To deploy the site on Heroku, follow these steps:
+
+1. **Log in to Heroku** or create an account if you don't have one.
+
+2. Click **New** and then **Create New App**.
+
+3. Select **Europe** as the region and click the **Create App** button.
+
+4. Create a **database** to connect to the newly created app.
+
+   - **Login to ElephantSQL**, or create an account if needed.
+   - Create a new instance and select the **Tiny Turtle free plan**.
+   - Choose a region for the data center (e.g., EU-West-1 in Ireland) and click **Create instance**.
+   - Click on the database instance name in the ElephantSQL dashboard, and copy the **database URL** from the URL section.
+
+5. Go back to **Heroku**, open your created app, and navigate to **Settings**.
+
+6. Add a **config var** with the key `DATABASE_URL`, and paste the copied database URL from ElephantSQL as the value (without quotation marks).
+
+7. In Gitpod, install **dj-database-url** and **psycopg2** to connect to the external database. Update the `requirements.txt` file with `pip freeze > requirements.txt`.
+
+8. In the Django settings, **import `dj_database_url`** and update the database configuration.
+
+9. **Migrate** your database to the Heroku server.
+
+10. Create a new **superuser** for your database, but be cautious not to commit any sensitive information to GitHub.
+
+11. Install **Gunicorn** (a WSGI HTTP server) and freeze it into the `requirements.txt` file.
+
+12. Create a **Procfile** in the root directory and add `web: gunicorn V_Jewelry_G.wsgi` to it.
+
+13. Run `DISABLE_COLLECTSTATIC=1` to prevent collecting static files during deployment.
+
+14. Commit and push your changes to **GitHub**.
+
+15. On your Heroku app dashboard, go to **Deploy**, connect it to your GitHub repository, and click **Connect**.
+
+16. Choose either **automatic** or **manual deploy**, then click **deploy branch**.
+
+17. When the deployment is complete, click **View** to open the deployed app.
+
+## Cloning the Repository
+
+To clone the repository from GitHub, follow these steps:
+
+### Forking
+
+1. Open the GitHub page that hosts the repository you wish to fork.
+
+2. Find the '**Fork**' button at the top right of the page and click it to fork the repository into your account.
+
+### Cloning
+
+1. Go to the repository page on GitHub.
+
+2. Click on the green button that says "**Code**".
+
+3. Copy the URL under the **HTTPS** tab if you wish to clone using HTTPS.
+
+4. Open a new terminal window, navigate to the directory where you want to store the cloned repository, and type:
+
+
+# Credits
+
+* Big thank to tutor support for helping me with the issues I faced.
+* stackoverflow for code fixing help
+* slack community
+
+# Acknowledgement
+
+I would like to thank my Mentor Brian Macharia, for reviewing the code and providing feedback and resources. 
