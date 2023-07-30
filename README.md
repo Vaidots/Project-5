@@ -206,3 +206,74 @@ For this site, a facebook business page was created to further increase the sear
 ## Email Marketing
 
 Customers can sign up to the newsletter which is in the footer, add their email and press subscribe, to receive all the news. Mail chimp was used to create this. Note addblock has to be disabled for the newsletter form to appear.
+
+## Testing
+
+### manual testing
+| Feature                          | Test Description                             | Expected Result                                             | Actual Result |
+|----------------------------------|----------------------------------------------|-------------------------------------------------------------|---------------|
+| V_jewelry_G                      | Selecting logo on homepage                  | Directs the user back to the homepage                       | Pass          |
+| Search                           | Using the search box                        | Entering a search returns the expected result               | Pass          |
+| Search no results                | No search                                   | Entering a no results search returns an error message and shows all products | Pass |
+| Navigation Links                 | Selecting navigation links                  | Directs the user to relevant pages                          | Pass          |
+| All products                     | Selecting all products                      | Directs the user to all products                            | Pass          |
+| Back to top                      | Back to top arrow                           | Selecting the arrow box on the products page brings the user back to the top of the page | Pass |
+| Sort By                          | Selecting the filter Sort                   | Successfully sorts by price, name, and category options     | Pass          |
+| Shop Now button                  | Selecting Shop Now button                   | Directs the user to all products page                       | Pass          |
+| Sign up for our newsletter       | Selecting Sign up for our newsletter        | Directs the user to the Sign up for our newsletter page     | Pass          |
+| Contact                          | Selecting Contact                           | Directs the user to the Contact Us page                     | Pass          |
+| Contact form submission          | Submitting the contact form                 | Successfully sends the submitted form and can be seen in the admin panel | Pass |
+| Leave a Comment when signed in   | Submitting a comment on a product           | Successfully submits and displays the comment               | Pass          |
+| As Admin Delete Comment          | Deleting a comment                          | Successfully removes the comment                             | Pass          |
+| My account                       | Selecting my account as admin               | Displays a dropdown menu unique to admin, apart from profile and logout options | Pass |
+| Register                         | Register for an account                     | Selecting Register in my account directs the user to the signup page | Pass |
+| Register                         | Registering as a new user                   | The registration form for new users works correctly         | Pass          |
+| Login                            | Login to an account                         | Selecting Login in my account directs the user to the Login page | Pass |
+| Login                            | Login to an account                         | The login form for new users works correctly                | Pass |
+| Login as admin                   | Login as admin                              | Logging in as an admin gives access to blog and product management | Pass |
+| Logout                           | Message shown                               | The logout message is shown after successful logout         | Pass          |
+| Add product to bag               | Adding a product to the shopping bag        | Successfully adds the product to the shopping bag           | Pass          |
+| Proceed securely to checkout     | Proceeding to checkout securely             | Successfully navigates to the checkout page                  | Pass          |
+| Payment with Stripe              | Making a payment using Stripe               | Payment is processed successfully                            | Pass          |
+| Add, Update, Delete products     | Managing products as a superuser            | Superusers can add, update, and delete products              | Pass          |
+| Receive confirmation email       | After payment, check email for confirmation | A confirmation email is received after payment               | Pass          |
+| Confirmation of order            | After payment, check order status           | Order is confirmed and visible in the user's account         | Pass          |
+
+## Validator testing
+
+### W3 html validator was used to check all the pages of the project.
+
+![](/media/HTMLvalidator.JPG)
+
+* The error in the code, was created by mailchimp, therefore I did not want to make any more errors on top.
+
+### CC3 W3 Validator
+
+![](/media/BaseCSS.JPG)
+
+* This file didnt present any errors or warnings for base,profile,checkout css.
+
+### JShint
+
+* Only a few semicolon warnings was shown.
+
+### Python testing
+
+* Used flask8 in the terminal to check and fix the issues, majority of the errors were from formatting, automatically generated files, code was cleaned as much as possible
+
+## Lighthouse
+
+### Dekstop
+
+![](/media/DekstopLighthouse.JPG)
+
+
+### Mobile
+
+![](/media/MobiLighthouse.JPG)
+
+* Mobile scores goes lower in other pages, due to picture sizes.
+
+
+
+
