@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category, Comment
 
+
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
@@ -14,12 +15,14 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
+
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
     )
+
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):

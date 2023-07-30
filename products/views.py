@@ -78,7 +78,8 @@ def product_detail(request, product_id):
             comment = form.save(commit=False)
             comment.product = product
             comment.save()
-            messages.success(request, "Your comment has been submited succesfully")
+            messages.success(
+                request, "Your comment has been submited succesfully")
             # Redirect to the product detail page after the comment is added
             return redirect('product_detail', product_id=product_id)
     else:
@@ -108,10 +109,12 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('add_product'))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add product. \
+                Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
