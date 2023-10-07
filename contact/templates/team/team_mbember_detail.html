@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ team_member.name }} - Team Member Detail</title>
+</head>
+<body>
+    <h1>{{ team_member.name }}</h1>
+    <p><strong>Role:</strong> {{ team_member.role }}</p>
+    <p><strong>Bio:</strong> {{ team_member.bio }}</p>
+    {% if team_member.photo %}
+        <img src="{{ team_member.photo.url }}" alt="{{ team_member.name }} Photo">
+    {% else %}
+        <p>No photo available</p>
+    {% endif %}
+</body>
+</html>

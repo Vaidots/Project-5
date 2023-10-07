@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Members</title>
+</head>
+<body>
+    <h1>Team Members</h1>
+    <ul>
+        {% for member in team_members %}
+            <li><a href="{% url 'team_member_detail' member.pk %}">{{ member.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

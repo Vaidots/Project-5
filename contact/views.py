@@ -1,7 +1,8 @@
 """ Imports from django and contact form. """
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .forms import ContactForm
+from .models import TeamMember
 
 
 def ContactMessage(request):
@@ -35,3 +36,13 @@ def ContactMessage(request):
     }
 
     return render(request, template, context)
+
+
+def team_member_list(request):
+    team_members = TeamMember.objects.all()
+    return render(request, 'team/member_list.html', {'team_members': team_members})
+
+
+def team_member_detail(request, pk):
+    team_member = get_object_or_404(TeamMember, pk=pk)
+    return render(request, 'team/member_detail.html', {'team_member': team_member})
