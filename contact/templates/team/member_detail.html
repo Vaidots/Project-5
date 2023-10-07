@@ -1,17 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ team_member.name }} - Team Member Detail</title>
-</head>
-<body>
-    <h1>{{ team_member.name }}</h1>
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">        
+        <div class="col-10">
+            <hr>
+            <h1 class="logo-font mb-4">Full Bio</h1>
+            <hr>
+            <h1>{{ team_member.name }}</h1>
     <p><strong>Role:</strong> {{ team_member.role }}</p>
     <p><strong>Bio:</strong> {{ team_member.bio }}</p>
-    {% if team_member.photo %}
-        <img src="{{ team_member.photo.url }}" alt="{{ team_member.name }} Photo">
-    {% else %}
-        <p>No photo available</p>
-    {% endif %}
-</body>
-</html>
+        </div>
+    </div>
+</div>
+{% endblock %}
