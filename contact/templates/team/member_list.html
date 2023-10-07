@@ -1,15 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Team Members</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
     <h1>Team Members</h1>
-    <ul>
+    
+    <div class="row">
         {% for member in team_members %}
-            <li><a href="{% url 'team_member_detail' member.pk %}">{{ member.name }}</a></li>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ member.photo.url }}" alt="{{ member.name }} Photo" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{ member.name }}</h5>
+                    <p class="card-text"><strong>Role:</strong> {{ member.role }}</p>
+                    <p class="card-text"><strong>Bio:</strong> {{ member.bio }}</p>
+                    <a href="{% url 'team_member_detail' member.pk %}" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
         {% endfor %}
-    </ul>
-</body>
-</html>
+    </div>
+</div>
+{% endblock %}
