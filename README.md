@@ -204,6 +204,12 @@ font 'Lato' was used throughout the body.
 
 * Users are able to contact us by filling the form provided.
 
+## Team Members
+
+![](/media/TeamMembers.png)
+
+* Users are able to see the team behind the product creation and read the bio to know them better.
+
 
 # Database Schema
 
@@ -339,7 +345,7 @@ Customers can sign up to the newsletter which is in the footer, add their email 
 
 #  Security 
 
-* In regards to the secret key that was left in the repository and is in the history, a new secret key was generated in en.py which is in gitignore, so no one can access the codebase.
+* In regards to the secret key that was left in the repository and is in the history, a new secret key was generated in env.py which is in gitignore, so no one can access the codebase.
 
 
 # Technologies
