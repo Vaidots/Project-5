@@ -299,6 +299,7 @@ Customers can sign up to the newsletter which is in the footer, add their email 
 ![](/media/HTMLvalidator.JPG)
 
 * The error in the code, was created by mailchimp, therefore I did not want to make any more errors on top.
+* Errors for products page was fixed.
 
 ### CC3 W3 Validator
 
@@ -335,6 +336,11 @@ Customers can sign up to the newsletter which is in the footer, add their email 
 * improve the website overall with appropriate size of images.
 * Createa a json file for database, as products were uploaded manually.
 * Implement more style and function, add react for fron end, to look more visually appealing as this is quite basic.
+
+#  Security 
+
+* In regards to the secret key that was left in the repository and is in the history, a new secret key was generated in en.py which is in gitignore, so no one can access the codebase.
+
 
 # Technologies
 
@@ -438,6 +444,7 @@ To clone the repository from GitHub, follow these steps:
 * Big thank to tutor support for helping me with the issues I faced.
 * stackoverflow for code fixing help
 * slack community
+* Botique Ado for everything
 
 # Acknowledgement
 
