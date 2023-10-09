@@ -29,11 +29,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-vaidots-project5-rqgmoqb1ri6.ws-eu105.gitpod.io',
-    '8000-vaidots-project5-7v3dmu4ewsn.ws-eu105.gitpod.io',
+    'projectportfolio5-a694568fc098.herokuapp.com',
     ]
 
 
