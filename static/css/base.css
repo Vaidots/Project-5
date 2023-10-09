@@ -215,7 +215,7 @@ a.category-badge > span.badge:hover {
     width: 50%;
     object-fit: cover;
     align-items: center;
-    height: 200px;
+    height: 350px;
     min-height: 250px;
 }
 
