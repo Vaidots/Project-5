@@ -12,14 +12,18 @@
 
 
 {% block content %}
+</style>
 <div class="overlay"></div>
 <div class="container">
     <h1 class="logo-font mt-4 mb-4">Team Members</h1>
     <div class="row">
         {% for member in team_members %}
         <div class="col-md-4">
-            <div class="card border-0  ">
-                <img src="{{ member.photo.url }}" alt="{{ member.name }} Photo" class="card-img-top img-fluid ">
+            <div class="card border-0">
+                <div >
+                    <img src="{{ member.photo.url }}" alt="{{ member.name }} Photo" class="card-img-top">
+                </div>
+                
                 <div class="card-body">
                     <h5 class="card-title">{{ member.name }}</h5>
                     <p class="card-text"><strong>Role:</strong> {{ member.role }}</p>

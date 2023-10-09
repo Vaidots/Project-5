@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /accounts/
 Disallow: /bag/
-Sitemap: https://projectportfolio5-a694568fc098.herokuapp.com/xml
+Sitemap: https://projectportfolio5-a694568fc098.herokuapp.com/sitemap.xml

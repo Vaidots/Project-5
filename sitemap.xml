@@ -9,97 +9,197 @@
 
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/bag/</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/?category=Necklace</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/?category=Wedding%20rings</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/?category=Wedding_rings</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/?category=Engagement%20rings</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/?category=Engagement_rings</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/products/?category=Earings</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/contact/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/contact/team/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=/products/7/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=/products/6/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=/products/4/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=/products/1/</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=/products/3/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=/products/5/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=/products/2/</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/contact/team-members/3/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/contact/team-members/1/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/contact/team-members/2/</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/signup/?next=%2Fproducts%2F7%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/signup/?next=%2Fproducts%2F6%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/signup/?next=%2Fproducts%2F4%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/signup/?next=%2Fproducts%2F1%2F</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/signup/?next=%2Fproducts%2F3%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/signup/?next=%2Fproducts%2F5%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/signup/?next=%2Fproducts%2F2%2F</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=%2Fproducts%2F7%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=%2Fproducts%2F6%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=%2Fproducts%2F4%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=%2Fproducts%2F1%2F</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=%2Fproducts%2F3%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=%2Fproducts%2F5%2F</loc>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://projectportfolio5-a694568fc098.herokuapp.com/accounts/login/?next=%2Fproducts%2F2%2F</loc>
-  <lastmod>2023-07-26T01:26:17+00:00</lastmod>
+  <lastmod>2023-10-09T22:27:04+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 

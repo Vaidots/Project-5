@@ -212,7 +212,7 @@ a.category-badge > span.badge:hover {
   }
 
 .card-img-top {
-    width: 50%;
+    /* width: 50%; */
     object-fit: cover;
     align-items: center;
     height: 350px;
@@ -300,6 +300,5 @@ a.category-badge > span.badge:hover {
 @media (min-width: 768px) {
     .card-img-top {
         width: 90%;
-       
     }
 }
